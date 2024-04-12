@@ -1,0 +1,54 @@
+/* Updated CSS styles with brighter colors and effects */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa; /* Brighter gray background */
+  }
+  
+  header {
+    background-color: #4CAF50; /* Bright green */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .review {
+    background-color: #fff;
+    border: 1px solid #ddd; /* Lighter border color */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .review:hover {
+    transform: translateY(-5px);
+  }
+  
+  .review h2 {
+    margin-top: 0;
+    color: #333; /* Darker text color */
+  }
+  
+  .review p.rating {
+    font-style: italic;
+    margin-top: 10px;
+  }
+  
+  footer {
+    background-color: #4CAF50; /* Bright green */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  

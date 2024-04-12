@@ -1,0 +1,93 @@
+
+
+.heading {
+    text-align: center;
+}
+
+.heading span {
+    font-weight: 700;
+    color: #fd053f;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heading p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(45deg, #fd053f, #ff8a00);
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+    animation: color-change 5s infinite alternate;
+}
+@keyframes color-change {
+    0% {
+        color: #fd053f;
+    }
+    100% {
+        color: #ff8a00;
+    }
+}
+
+.cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cars-container .box {
+    flex: 1 1 calc(33.33% - 2rem); 
+    position: relative;
+    height: 200px; 
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem; 
+    cursor: pointer; 
+}
+
+.cars-container .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease; 
+}
+
+.cars-container .box:hover img {
+    transform: scale(1.1);
+}
+
+.cars-container .box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+}
+
+.cars-container .box:hover .overlay {
+    opacity: 1; 
+}
+
+.cars-container .box h2 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 8px 12px; 
+    border-radius: 0.5rem;
+    z-index: 1; 
+    transition: background-color 0.3s ease; 
+}
+
+.cars-container .box:hover h2 {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
